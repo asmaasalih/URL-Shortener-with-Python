@@ -1,0 +1,18 @@
+{% extends 'base.html'%}
+{% block content %}
+<div class="card">
+    <div class="card-header">
+      Url Shortener
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Original Url</h5>
+      <p class="card-text"></p>
+      <form method="POST">
+        {% csrf_token %}
+        <input type="text" name='url' style="width:100%;margin-bottom:10px;" placeholder="Write your URL here...">
+        <center><button type="submit" class="btn btn-secondary">Create Short URL</button></center>
+      </form>
+      
+    </div>
+  </div>
+{% endblock content %}

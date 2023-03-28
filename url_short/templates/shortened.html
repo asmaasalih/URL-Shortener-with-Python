@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+{% block content %}
+<div class="card">
+    <div class="card-header">
+      Url Shortener
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">Short Url</h5>
+        <p class="card-text"> <a href="{{ short_url }}">{{short_url}}</a></p>
+    
+      </div>
+    </div>
+  {% endblock content %}
